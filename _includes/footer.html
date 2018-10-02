@@ -40,7 +40,7 @@
 <!--toc-->
 <script type="text/javascript">
 $(document).ready(function() {
-    $('#toc').toc();
+    $('#toc').toc({ headers: '.post-container h1, .post-container h2, .post-container h3, .post-container h4, .post-container h5, .post-container h6' });
 });
 $('.to-top').toTop();
 </script>
@@ -183,7 +183,7 @@ var _hmt = _hmt || [];
             changeHash: !1,
             easing: "swing",
             filter: "",
-            scrollSpeed: 700,
+            scrollSpeed: 300,
             scrollOffset: 0,
             scrollThreshold: .2,
             begin: null,
