@@ -5,12 +5,14 @@
 
 @media (min-width: 1200px) {
   .post-container,
+  .toc-container,
   .sidebar-container {
     padding-right: 5%;
   }
 }
 @media (min-width: 768px) {
-  .post-container {
+  .post-container,
+  .toc-container {
     padding-right: 5%;
   }
 }

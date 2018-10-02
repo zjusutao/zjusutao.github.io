@@ -3,7 +3,7 @@ title: Taos Blog
 SEOTitle: 涛小苏的博客 | Taos Blog
 header-img: img/home-bg.jpg
 email: zjusutao@gmail.com
-description: "关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
+description: "关于程序与设计、天气与数据 | 涛小苏，Web & Mobile Lover，Engineer，| 这里是 @zjusutao 的个人博客，与你一起发现更大的世界。"
 keyword: "涛小苏，Taos Blog，zjusutao, 涛小苏的博客, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
 url: "https://zjusutao.top"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -13,9 +13,10 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     zjusuto
+weibo_username:     zjusutao
 douban_username:    zjusutao
-zhihu_username:     darkblue
+music163_username:  home?id=5883942
+#zhihu_username:     darkblue
 github_username:    zjusuto
 #twitter_username:   zjusuto
 #facebook_username:  huxpro
@@ -77,7 +78,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Yet another Ph.D<br>WE ARE 伐木累"
+sidebar-about-description: "Yet another PhD<br>WE ARE 伐木累"
 sidebar-avatar: /img/ts_wx.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -103,7 +104,7 @@ page-mathjax: false
 # Friends
 friends: [
     {
-        title: "MW Review",
+        title: "MWR",
         href: "https://www.ametsoc.org/ams/index.cfm/publications/journals/monthly-weather-review/"
     },{
         title: "Google Scholar",

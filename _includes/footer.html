@@ -9,21 +9,20 @@
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
-                    Themed by <a href="http://huangxuan.me">Hux</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
-                    </iframe>
+                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    <span id="busuanzi_container_site_uv">
+                      <span id="busuanzi_value_site_uv"></span> visitors
+                    </span>
                 </p>
             </div>
         </div>
     </div>
 </footer>
-
+ <a class="to-top totop-lo">Top &uarr;</a>
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/toc.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.toTop.js " | prepend: site.baseurl }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
@@ -43,6 +42,7 @@
 $(document).ready(function() {
     $('#toc').toc();
 });
+$('.to-top').toTop();
 </script>
 
 <!-- async load function -->
@@ -55,6 +55,8 @@ $(document).ready(function() {
       if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
       s.parentNode.insertBefore(o, s);
     }
+</script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
 
 <!--
@@ -121,22 +123,16 @@ $(document).ready(function() {
 
 
 <!-- Baidu Tongji -->
-{% if site.ba_track_id %}
+
 <script>
-    // dynamic User by Hux
-    var _baId = '{{ site.ba_track_id }}';
-
-    // Originial
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?" + _baId;
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?943e21ddb32e81140926a31629687b7c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
-{% endif %}
-
 
 <!-- Side Catalog -->
 {% if page.catalog %}
