@@ -40,6 +40,7 @@
                 'position': 'fixed',
                 'right': options.right,
                 'bottom': options.bottom,
+                'font-size': '17px',
                 'padding': '1px 5px',
                 'border-radius': '5px',
                 'background-color': '#ffffff',
